@@ -33,7 +33,7 @@
         android:layout_marginTop="32dp"
         android:layout_toEndOf="@id/ivBackdrop"
         android:fontFamily="sans-serif"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/colorWhite"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/ivBackdrop"
@@ -51,7 +51,7 @@
         android:layout_marginRight="15dp"
         android:layout_toEndOf="@+id/ivBackdrop"
         android:fontFamily="sans-serif"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="@+id/ivBackdrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -67,5 +67,5 @@
         app:layout_constraintEnd_toEndOf="@+id/ivBackdrop"
         app:layout_constraintStart_toStartOf="@+id/ivBackdrop"
         app:layout_constraintTop_toTopOf="@+id/ivBackdrop"
-        app:srcCompat="@drawable/ic_launcher_playbutton" />
+        app:srcCompat="@drawable/ic_playbutton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

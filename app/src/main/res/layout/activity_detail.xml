@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="@color/colorBlack"
     android:orientation="vertical"
     tools:context=".DetailActivity">
 
@@ -17,7 +17,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/colorWhite"
         android:textSize="30sp"
         android:textStyle="bold"
         tools:text="Black Panther" />
@@ -29,18 +29,19 @@
         android:layout_height="wrap_content"
         android:isIndicator="true"
         android:numStars="10"
+        android:progressTint="@color/colorAccent"
         android:rating="8.5" />
 
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/colorWhite"
         tools:text="A professional thief with $40 million in debt and his family's life on the line must commit one final heist - rob a futuristic airborne casino filled with the world's most dangerous criminals." />
 
     <TextView
         android:id="@+id/tvReleaseDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FFFFFF" />
+        android:textColor="@color/colorWhite" />
 </LinearLayout>
