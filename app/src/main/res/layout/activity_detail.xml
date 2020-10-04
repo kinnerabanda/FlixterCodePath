@@ -34,4 +34,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="Some sample data as placeholder." />
+
+    <TextView
+        android:id="@+id/tvReleaseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

@@ -19,6 +19,7 @@ public class Movie {
     String overview;
     String backdropPath;
     double rating;
+    String releaseDate;
 
     //Empty constructor needed for parceler library.
     public Movie() {}
@@ -30,6 +31,7 @@ public class Movie {
         backdropPath = jsonObject.getString("backdrop_path");
         rating = jsonObject.getDouble("vote_average");
         movieId = jsonObject.getInt("id");
+        releaseDate = jsonObject.getString("release_date");
     }
 
     public static List<Movie> fromJSONArray(JSONArray movieJsonArray) throws JSONException {
@@ -63,5 +65,9 @@ public class Movie {
 
     public int getMovieId() {
         return movieId;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
     }
 }
