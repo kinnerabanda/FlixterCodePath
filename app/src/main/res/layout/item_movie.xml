@@ -7,7 +7,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="15dp"
-    android:background="@drawable/border"
     android:clickable="false"
     tools:layout_editor_absoluteX="1dp"
     tools:layout_editor_absoluteY="1dp">
@@ -15,8 +14,8 @@
 
         <ImageView
             android:id="@+id/ivPoster"
-            android:layout_width="122dp"
-            android:layout_height="136dp"
+            android:layout_width="118dp"
+            android:layout_height="223dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="15dp"
@@ -30,30 +29,48 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
             android:layout_toEndOf="@id/ivPoster"
-            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
             android:textSize="24sp"
-            android:textStyle="bold|italic"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/ivPoster"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivPoster"
             tools:text="Black Panther" />
 
         <TextView
             android:id="@+id/tvOverview"
-            android:layout_width="243dp"
-            android:layout_height="109dp"
+            android:layout_width="265dp"
+            android:layout_height="0dp"
             android:layout_below="@+id/tvTitle"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="20dp"
             android:layout_toEndOf="@+id/ivPoster"
-            android:fontFamily="serif"
-            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.727"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/ivPoster"
             app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintVertical_bias="1.0"
             tools:text="A professional thief with $40 million in debt and his family's life on the line must commit one final heist - rob a futuristic airborne casino filled with the world's most dangerous criminals." />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPoster"
+            app:layout_constraintEnd_toEndOf="@+id/ivPoster"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/ivPoster"
+            app:layout_constraintTop_toTopOf="@+id/ivPoster"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_launcher_playbutton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    android:background="@drawable/border"-->

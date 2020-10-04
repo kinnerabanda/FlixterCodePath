@@ -66,10 +66,8 @@ public class DetailActivity extends YouTubeBaseActivity {
                     Log.e("DetailActivity", "Failed to parse through JSON", e);
                 }
             }
-
             @Override
             public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
-
             }
         });
 
