@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,10 +26,14 @@ import com.bumptech.glide.request.RequestOptions;
 import com.codepath.kbanda.flixter.DetailActivity;
 import com.codepath.kbanda.flixter.R;
 import com.codepath.kbanda.flixter.models.Movie;
+import com.google.android.youtube.player.YouTubePlayerView;
 
 import org.parceler.Parcels;
 
 import java.util.List;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
 
@@ -63,14 +68,23 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         return movies.size();
     }
 
+
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvTitle;
         TextView tvOverview;
         ImageView ivPoster;
         ImageView ivBackdrop;
         ConstraintLayout container;
+//        @BindView(R.id.tvTitle) TextView tvTitle;
+//        @BindView(R.id.tvOverview) TextView tvOverview;
+//        @BindView(R.id.ivPoster) ImageView ivPoster;
+//        @BindView(R.id.ivBackdrop) ImageView ivBackdrop;
+//        @BindView(R.id.container) ConstraintLayout container;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+//            ButterKnife.bind(this, itemView);
             tvTitle = itemView.findViewById(R.id.tvTitle);
             tvOverview = itemView.findViewById(R.id.tvOverview);
             ivPoster = itemView.findViewById(R.id.ivPoster);

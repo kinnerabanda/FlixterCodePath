@@ -20,6 +20,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.parceler.Parcels;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import okhttp3.Headers;
 
 public class DetailActivity extends YouTubeBaseActivity {
@@ -32,6 +34,11 @@ public class DetailActivity extends YouTubeBaseActivity {
     TextView tvReleaseDate;
     RatingBar ratingBar;
     YouTubePlayerView youTubePlayerView;
+//    @BindView(R.id.tvTitle) TextView tvTitle;
+//    @BindView(R.id.tvOverview) TextView tvOverview;
+//    @BindView(R.id.tvReleaseDate) TextView tvReleaseDate;
+//    @BindView(R.id.ratingBar) RatingBar ratingBar;
+//    @BindView(R.id.player) YouTubePlayerView youTubePlayerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +50,8 @@ public class DetailActivity extends YouTubeBaseActivity {
         ratingBar = findViewById(R.id.ratingBar);
         youTubePlayerView = findViewById(R.id.player);
         tvReleaseDate = findViewById(R.id.tvReleaseDate);
+
+//        ButterKnife.bind(this);
 
         Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("movie"));
         tvTitle.setText(movie.getTitle());
